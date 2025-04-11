@@ -579,7 +579,9 @@ pub struct FileQuality {
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Metadata {
-    pub attributes: Option<Vec<Attribute>>,
+    // Disabled for now because of
+    // https://github.com/helius-labs/helius-rust-sdk/issues/114
+    // pub attributes: Option<Vec<Attribute>>,
     pub description: Option<String>,
     pub name: Option<String>,
     pub symbol: Option<String>,
